@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
 
     private static final String JSONPLACEHOLDER_URL = "https://jsonplaceholder.typicode.com/";
 
-    private static final String MOVIE_MOST_POPULAR_URL = "http://api.themoviedb.org/3/movie/";
+    private static final String MOVIE_URL = "http://api.themoviedb.org/3/movie/";
 
 
     @Override
@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
 
         Retrofit retrofit = new Retrofit.Builder()
                 //.baseUrl(JSONPLACEHOLDER_URL)
-                .baseUrl(MOVIE_MOST_POPULAR_URL)
+                .baseUrl(MOVIE_URL)
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
 
